@@ -4,9 +4,9 @@
 # Macs come with Python pre-installed. Windows users will have to download it.
 # Another package called pip makes it very easy to install Tweepy. 
 # Once you have Python and pip installed, simply type
-# pip sudo install tweepy
+#     pip sudo install tweepy
 # into the Command Prompt or Terminal, and you will be good to go. 
-# 
+#
 # Save this twitter.py script in a file of your choice, and be sure to include
 # a text file with the four credentials necessary to access the Twitter API: 
 # The consumer key, the consumer secret, the access key, and the access secret. 
@@ -14,6 +14,8 @@
 # Save all four in a text file, with each on its own line. 
 # Save that text file in the same directory as this Python script. 
 # Then head to Terminal/Command Prompt and save tweets to your heart's content.
+# Navigate to the directory where you saved twitter.py, then type
+#     python twitter.py
 
 
 import tweepy
@@ -207,7 +209,7 @@ def main():
         print "Choose Option 1 to enter the file path of your authentication document."
         print "If you don't have one, get the four Twitter keys and save them on separate lines in a txt file."
     while True:
-        choice = raw_input("Make your pick (1, 2, 3, 4, T, or Q).\n")
+        choice = raw_input("Make your pick (1, 2, 3, 4, 5, 6, or Q).\n")
         if choice == "1":
             filepath = raw_input("Enter the new filepath: ")
             list_of_keys = assign_keys(filepath)
