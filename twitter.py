@@ -195,14 +195,14 @@ def main():
     print "TWITTER SCRAPER!"
     print
     try:
-		## Update this file path to use this on your computer! 
+        ## Update this file path to use this on your computer! 
         list_of_keys = assign_keys("C:\\Users\\bsullivan\\Desktop\\twittercredentials.txt")
     except IOError:
         print "Choose Option 1 to enter the file path of your authentication document."
         print "If you don't have one, get the four Twitter keys and save them on separate lines in a txt file."
     while True:
-	    print
-	    print "1. Assign new keys (if you want to change the user authentication)"
+        print
+        print "1. Assign new keys (if you want to change the user authentication)"
         print "2. Print a given number of a given user's latest tweets."
         print "3. Save a given user's tweets to CSV (photo URLs only)."
         print "4. Save a given user's tweets to CSV, and save photos to local folder."
